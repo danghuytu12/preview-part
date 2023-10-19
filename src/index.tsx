@@ -1,6 +1,6 @@
 import * as React from 'react'
-import ChapterLeft from './ChapterLeft'
-import ChapterRight from './ChapterRight'
+import ChapterLeft from './ChapterColumnLeft'
+import ChapterRight from './ChapterColumnRight'
 import styles from './styles.module.css'
 
 const ExampleComponent = () => {

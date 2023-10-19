@@ -3,7 +3,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var React = require('react');
 var React__default = _interopDefault(React);
 
-var styles = {"container":"_1Lxpd","leftColumn":"_2gaAC","leftColumnGap":"_ijnjF","rightColumn":"_3NenG","subColumn":"_39ZZ8","subColumnPart":"_3a68D","subColumnActive":"_2CF2J","titlePart":"_3BaYH","descriptionPart":"_3ubcI","timeProgress":"_2-wbY","timeRemainning":"_3Tma6","percentProgress":"_25lI6","titleChapter":"_zqKUL","titleChapterActive":"_1RYoN","timeProgressSecondary":"_1AjD2","timeRemainningSecondary":"_3LgLF","percentProgressSecondary":"_lpLCV","progressContainer":"_1vzPx","btnPrimary":"_3LN22","btnSecondary":"_1aql5","infoChapterRight":"_2cr3p","titleChapterRight":"_102GJ","infoUnit":"_34j0Z","titleLearning":"_kLKwI","timeUnit":"_37abq"};
+var styles = {"container":"_styles-module__container__1Lxpd","leftColumn":"_styles-module__leftColumn__2gaAC","leftColumnGap":"_styles-module__leftColumnGap__ijnjF","rightColumn":"_styles-module__rightColumn__3NenG","subColumn":"_styles-module__subColumn__39ZZ8","subColumnPart":"_styles-module__subColumnPart__3a68D","subColumnActive":"_styles-module__subColumnActive__2CF2J","titlePart":"_styles-module__titlePart__3BaYH","descriptionPart":"_styles-module__descriptionPart__3ubcI","timeProgress":"_styles-module__timeProgress__2-wbY","timeRemainning":"_styles-module__timeRemainning__3Tma6","percentProgress":"_styles-module__percentProgress__25lI6","titleChapter":"_styles-module__titleChapter__zqKUL","titleChapterActive":"_styles-module__titleChapterActive__1RYoN","timeProgressSecondary":"_styles-module__timeProgressSecondary__1AjD2","timeRemainningSecondary":"_styles-module__timeRemainningSecondary__3LgLF","percentProgressSecondary":"_styles-module__percentProgressSecondary__lpLCV","progressContainer":"_styles-module__progressContainer__1vzPx","btnPrimary":"_styles-module__btnPrimary__3LN22","btnSecondary":"_styles-module__btnSecondary__1aql5","infoChapterRight":"_styles-module__infoChapterRight__2cr3p","titleChapterRight":"_styles-module__titleChapterRight__102GJ","infoUnit":"_styles-module__infoUnit__34j0Z","titleLearning":"_styles-module__titleLearning__kLKwI","timeUnit":"_styles-module__timeUnit__37abq"};
 
 var Progress = function Progress(_ref) {
   var classNameBtn = _ref.classNameBtn,
@@ -77,7 +77,7 @@ var Chapter = function Chapter(_ref) {
 };
 
 var items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa'];
-var ChapterLeft = function ChapterLeft(_ref) {
+var ChapterColumnLeft = function ChapterColumnLeft(_ref) {
   var handleClickActive = _ref.handleClickActive,
     activeItem = _ref.activeItem;
   return React__default.createElement("div", {
@@ -193,7 +193,7 @@ var PartUnit = function PartUnit() {
   }, "21m")));
 };
 
-function ChapterRight() {
+function ChapterColumnRight() {
   return React__default.createElement("div", {
     className: styles.columnRight
   }, React__default.createElement("div", {
@@ -264,10 +264,10 @@ var ExampleComponent = function ExampleComponent() {
   };
   return React.createElement("div", {
     className: styles.container
-  }, React.createElement(ChapterLeft, {
+  }, React.createElement(ChapterColumnLeft, {
     handleClickActive: handleClickActive,
     activeItem: activeItem
-  }), React.createElement(ChapterRight, null));
+  }), React.createElement(ChapterColumnRight, null));
 };
 
 module.exports = ExampleComponent;
