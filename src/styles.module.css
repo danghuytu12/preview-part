@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 30% auto; /* Divide the container into two columns with a 1:2 ratio */
   gap: 20px; /* Adjust the gap between columns */
-  width: 80%; /* Set a maximum width for the container */
+  width: 100%; /* Set a maximum width for the container */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
 }
