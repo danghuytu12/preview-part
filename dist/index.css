@@ -1,0 +1,167 @@
+._styles-module__gridContainer__1bGdx > ._styles-module__columnLeft__5m50F {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  color: black;
+  text-decoration: none;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+._styles-module__gridContainer__1bGdx > ._styles-module__columnRight__2tWVh {
+  /* background-color: #ffffff; */
+  text-align: left;
+  padding: 15px;
+  /* box-shadow: 0px 2px 4px 0px #00000014; */
+  color: black;
+  text-decoration: none;
+}
+
+._styles-module__gridContainer__1bGdx {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-gap: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+._styles-module__titlePart__3BaYH {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #141414;
+}
+
+._styles-module__descriptionPart__3ubcI {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #141414;
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+._styles-module__timeProgress__2-wbY {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #141414;
+}
+
+._styles-module__timeRemainning__3Tma6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #a1a1a1;
+  margin-left: 0.2rem;
+}
+
+._styles-module__percentProgress__25lI6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #141414;
+}
+
+._styles-module__titleChapter__zqKUL {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+
+._styles-module__titleChapterActive__1RYoN {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+._styles-module__timeProgressSecondary__1AjD2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a1a1a1;
+}
+
+._styles-module__timeRemainningSecondary__3LgLF {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #a1a1a1;
+  margin-left: 0.2rem;
+}
+
+._styles-module__percentProgress__25lI6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #141414;
+}
+
+._styles-module__percentProgressSecondary__lpLCV {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #a1a1a1;
+}
+
+._styles-module__progressContainer__1vzPx {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 25px;
+}
+
+._styles-module__btnPrimary__3LN22{
+  background-color: #ffd700;
+}
+
+._styles-module__btnSecondary__1aql5 {
+  background-color: #D5D5D5;
+}
+
+._styles-module__infoChapterRight__2cr3p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  border-bottom: 1px solid #E4E4E4;
+  padding-bottom: 0.75rem;
+}
+
+._styles-module__titleChapterRight__102GJ{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px 0px;
+}
+
+._styles-module__infoUnit__34j0Z{
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  align-items: center;
+  display: flex;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+._styles-module__titleLearning__kLKwI{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #141414;
+  align-self: center;
+}
+
+._styles-module__timeUnit__37abq{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+._styles-module__justify-content-between__3iWjs{
+  justify-content: space-between;
+}
