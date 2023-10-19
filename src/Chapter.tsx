@@ -13,35 +13,43 @@ const Chapter = ({
 }) => {
   return (
     <div
-      style={{
-        marginTop: 25,
-        cursor: 'pointer'
-      }}
-      onClick={() => handleClickActive(item)}
+      className={
+        item === activeItem ? styles.subColumnActive : styles.subColumn
+      }
     >
       <div
-        className={
-          activeItem === item ? styles.titleChapterActive : styles.titleChapter
-        }
+        style={{
+          // marginTop: 25,
+          cursor: 'pointer'
+        }}
+        onClick={() => handleClickActive(item)}
       >
-        Chapter 1: Audit and other assurance engagement
+        <div
+          className={
+            activeItem === item
+              ? styles.titleChapterActive
+              : styles.titleChapter
+          }
+        >
+          Chapter 1: Audit and other assurance engagement
+        </div>
+        <Progress
+          classNameBtn={
+            activeItem === item ? styles.btnPrimary : styles.btnSecondary
+          }
+          classNameTitle={
+            activeItem === item
+              ? styles.timeProgress
+              : styles.timeProgressSecondary
+          }
+          classNameRemainning={styles.timeRemainningSecondary}
+          classPercent={
+            activeItem === item
+              ? styles.percentProgress
+              : styles.percentProgressSecondary
+          }
+        />
       </div>
-      <Progress
-        classNameBtn={
-          activeItem === item ? styles.btnPrimary : styles.btnSecondary
-        }
-        classNameTitle={
-          activeItem === item
-            ? styles.timeProgress
-            : styles.timeProgressSecondary
-        }
-        classNameRemainning={styles.timeRemainningSecondary}
-        classPercent={
-          activeItem === item
-            ? styles.percentProgress
-            : styles.percentProgressSecondary
-        }
-      />
     </div>
   )
 }

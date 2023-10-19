@@ -1,29 +1,49 @@
-._styles-module__gridContainer__1bGdx > ._styles-module__columnLeft__5m50F {
-  background-color: #ffffff;
-  text-align: left;
+._styles-module__container__1Lxpd {
+  display: grid;
+  grid-template-columns: 30% auto; /* Divide the container into two columns with a 1:2 ratio */
+  gap: 20px; /* Adjust the gap between columns */
+  width: 80%; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
-  box-shadow: 0px 2px 4px 0px #00000014;
-  color: black;
-  text-decoration: none;
+}
+
+
+._styles-module__leftColumn__2gaAC {
+  display: grid;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  /* gap: 10px;  */
   height: -moz-min-content;
   height: min-content;
 }
 
-._styles-module__gridContainer__1bGdx > ._styles-module__columnRight__2tWVh {
-  /* background-color: #ffffff; */
-  text-align: left;
-  padding: 15px;
-  /* box-shadow: 0px 2px 4px 0px #00000014; */
-  color: black;
-  text-decoration: none;
+._styles-module__leftColumnGap__ijnjF {
+  display: grid;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  gap: 10px; 
 }
 
-._styles-module__gridContainer__1bGdx {
+._styles-module__rightColumn__3NenG {
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-gap: 10px;
-  background-color: #f9f9f9;
-  padding: 10px;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  gap: 10px; /* Adjust the gap between sub-columns */
+}
+
+._styles-module__subColumn__39ZZ8 {
+  background-color: #ffffff;
+  /* padding: 10px; */
+  border-top: 1px solid #efefef;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  padding: 20px;
+}
+
+._styles-module__subColumnActive__2CF2J {
+  background-color: #ffffff;
+  /* padding: 10px; */
+  margin: 15px 0px;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 ._styles-module__titlePart__3BaYH {
@@ -110,8 +130,8 @@
 }
 
 ._styles-module__progressContainer__1vzPx {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 25px;
+  /* border-bottom: 1px solid #efefef; */
+  /* padding-bottom: 25px; */
 }
 
 ._styles-module__btnPrimary__3LN22{
@@ -144,7 +164,7 @@
   align-items: center;
   display: flex;
   padding: 10px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
   justify-content: space-between;
 }
 
@@ -160,8 +180,4 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-}
-
-._styles-module__justify-content-between__3iWjs{
-  justify-content: space-between;
 }

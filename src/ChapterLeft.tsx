@@ -12,20 +12,25 @@ const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa']
 
 const ChapterLeft = ({ handleClickActive, activeItem }: IProps) => {
   return (
-    <div className={styles.columnLeft}>
-      <div className={styles.titlePart}>
-        Part A: Audit framework and regulation
+    <div className={styles.leftColumn}>
+      <div className={styles.subColumn}>
+        <div>
+          <div className={styles.titlePart}>
+            Part A: Audit framework and regulation
+          </div>
+          <div className={styles.descriptionPart}>
+            An introduction to supply-and-demand and of analysis for customers
+            and firms and pro max.
+          </div>
+          <Progress
+            classNameBtn={styles.btnPrimary}
+            classNameTitle={styles.timeProgress}
+            classNameRemainning={styles.timeRemainning}
+            classPercent={styles.percentProgress}
+          />
+        </div>
       </div>
-      <div className={styles.descriptionPart}>
-        An introduction to supply-and-demand and of analysis for customers and
-        firms and pro max.
-      </div>
-      <Progress
-        classNameBtn={styles.btnPrimary}
-        classNameTitle={styles.timeProgress}
-        classNameRemainning={styles.timeRemainning}
-        classPercent={styles.percentProgress}
-      />
+
       {items.map((item) => (
         <Chapter
           key={item}

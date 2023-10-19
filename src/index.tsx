@@ -12,7 +12,7 @@ const ExampleComponent = () => {
   }
 
   return (
-    <div className={styles.gridContainer}>
+    <div className={styles.container}>
       <ChapterLeft
         handleClickActive={handleClickActive}
         activeItem={activeItem}

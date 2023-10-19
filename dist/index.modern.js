@@ -1,6 +1,6 @@
 import React__default, { useState, createElement } from 'react';
 
-var styles = {"gridContainer":"_styles-module__gridContainer__1bGdx","columnLeft":"_styles-module__columnLeft__5m50F","columnRight":"_styles-module__columnRight__2tWVh","titlePart":"_styles-module__titlePart__3BaYH","descriptionPart":"_styles-module__descriptionPart__3ubcI","timeProgress":"_styles-module__timeProgress__2-wbY","timeRemainning":"_styles-module__timeRemainning__3Tma6","percentProgress":"_styles-module__percentProgress__25lI6","titleChapter":"_styles-module__titleChapter__zqKUL","titleChapterActive":"_styles-module__titleChapterActive__1RYoN","timeProgressSecondary":"_styles-module__timeProgressSecondary__1AjD2","timeRemainningSecondary":"_styles-module__timeRemainningSecondary__3LgLF","percentProgressSecondary":"_styles-module__percentProgressSecondary__lpLCV","progressContainer":"_styles-module__progressContainer__1vzPx","btnPrimary":"_styles-module__btnPrimary__3LN22","btnSecondary":"_styles-module__btnSecondary__1aql5","infoChapterRight":"_styles-module__infoChapterRight__2cr3p","titleChapterRight":"_styles-module__titleChapterRight__102GJ","infoUnit":"_styles-module__infoUnit__34j0Z","titleLearning":"_styles-module__titleLearning__kLKwI","timeUnit":"_styles-module__timeUnit__37abq","justify-content-between":"_styles-module__justify-content-between__3iWjs"};
+var styles = {"container":"_styles-module__container__1Lxpd","leftColumn":"_styles-module__leftColumn__2gaAC","leftColumnGap":"_styles-module__leftColumnGap__ijnjF","rightColumn":"_styles-module__rightColumn__3NenG","subColumn":"_styles-module__subColumn__39ZZ8","subColumnActive":"_styles-module__subColumnActive__2CF2J","titlePart":"_styles-module__titlePart__3BaYH","descriptionPart":"_styles-module__descriptionPart__3ubcI","timeProgress":"_styles-module__timeProgress__2-wbY","timeRemainning":"_styles-module__timeRemainning__3Tma6","percentProgress":"_styles-module__percentProgress__25lI6","titleChapter":"_styles-module__titleChapter__zqKUL","titleChapterActive":"_styles-module__titleChapterActive__1RYoN","timeProgressSecondary":"_styles-module__timeProgressSecondary__1AjD2","timeRemainningSecondary":"_styles-module__timeRemainningSecondary__3LgLF","percentProgressSecondary":"_styles-module__percentProgressSecondary__lpLCV","progressContainer":"_styles-module__progressContainer__1vzPx","btnPrimary":"_styles-module__btnPrimary__3LN22","btnSecondary":"_styles-module__btnSecondary__1aql5","infoChapterRight":"_styles-module__infoChapterRight__2cr3p","titleChapterRight":"_styles-module__titleChapterRight__102GJ","infoUnit":"_styles-module__infoUnit__34j0Z","titleLearning":"_styles-module__titleLearning__kLKwI","timeUnit":"_styles-module__timeUnit__37abq"};
 
 const Progress = ({
   classNameBtn,
@@ -47,8 +47,9 @@ const Chapter = ({
   activeItem
 }) => {
   return React__default.createElement("div", {
+    className: item === activeItem ? styles.subColumnActive : styles.subColumn
+  }, React__default.createElement("div", {
     style: {
-      marginTop: 25,
       cursor: 'pointer'
     },
     onClick: () => handleClickActive(item)
@@ -59,7 +60,7 @@ const Chapter = ({
     classNameTitle: activeItem === item ? styles.timeProgress : styles.timeProgressSecondary,
     classNameRemainning: styles.timeRemainningSecondary,
     classPercent: activeItem === item ? styles.percentProgress : styles.percentProgressSecondary
-  }));
+  })));
 };
 
 const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa'];
@@ -68,8 +69,10 @@ const ChapterLeft = ({
   activeItem
 }) => {
   return React__default.createElement("div", {
-    className: styles.columnLeft
+    className: styles.leftColumn
   }, React__default.createElement("div", {
+    className: styles.subColumn
+  }, React__default.createElement("div", null, React__default.createElement("div", {
     className: styles.titlePart
   }, "Part A: Audit framework and regulation"), React__default.createElement("div", {
     className: styles.descriptionPart
@@ -78,7 +81,7 @@ const ChapterLeft = ({
     classNameTitle: styles.timeProgress,
     classNameRemainning: styles.timeRemainning,
     classPercent: styles.percentProgress
-  }), items.map(item => React__default.createElement(Chapter, {
+  }))), items.map(item => React__default.createElement(Chapter, {
     key: item,
     handleClickActive: handleClickActive,
     item: item,
@@ -245,7 +248,7 @@ const ExampleComponent = () => {
     setActiveItem(item);
   };
   return createElement("div", {
-    className: styles.gridContainer
+    className: styles.container
   }, createElement(ChapterLeft, {
     handleClickActive: handleClickActive,
     activeItem: activeItem

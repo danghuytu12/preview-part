@@ -1,28 +1,48 @@
-.gridContainer > .columnLeft {
-  background-color: #ffffff;
-  text-align: left;
+.container {
+  display: grid;
+  grid-template-columns: 30% auto; /* Divide the container into two columns with a 1:2 ratio */
+  gap: 20px; /* Adjust the gap between columns */
+  width: 80%; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
-  box-shadow: 0px 2px 4px 0px #00000014;
-  color: black;
-  text-decoration: none;
+}
+
+
+.leftColumn {
+  display: grid;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  /* gap: 10px;  */
   height: min-content;
 }
 
-.gridContainer > .columnRight {
-  /* background-color: #ffffff; */
-  text-align: left;
-  padding: 15px;
-  /* box-shadow: 0px 2px 4px 0px #00000014; */
-  color: black;
-  text-decoration: none;
+.leftColumnGap {
+  display: grid;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  gap: 10px; 
 }
 
-.gridContainer {
+.rightColumn {
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-gap: 10px;
-  background-color: #f9f9f9;
-  padding: 10px;
+  grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
+  gap: 10px; /* Adjust the gap between sub-columns */
+}
+
+.subColumn {
+  background-color: #ffffff;
+  /* padding: 10px; */
+  border-top: 1px solid #efefef;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  padding: 20px;
+}
+
+.subColumnActive {
+  background-color: #ffffff;
+  /* padding: 10px; */
+  margin: 15px 0px;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .titlePart {
@@ -109,8 +129,8 @@
 }
 
 .progressContainer {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 25px;
+  /* border-bottom: 1px solid #efefef; */
+  /* padding-bottom: 25px; */
 }
 
 .btnPrimary{
@@ -143,7 +163,7 @@
   align-items: center;
   display: flex;
   padding: 10px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
   justify-content: space-between;
 }
 
@@ -159,8 +179,4 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-}
-
-.justify-content-between{
-  justify-content: space-between;
 }
