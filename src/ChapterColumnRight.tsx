@@ -3,7 +3,7 @@ import PartUnit from './PartUnit'
 import styles from './styles.module.css'
 import progress from '../assets/progress.svg'
 
-function ChapterRight() {
+function ChapterColumnRight() {
   return (
     <div className={styles.columnRight}>
       <div className={styles.infoChapterRight}>editor</div>
@@ -49,4 +49,4 @@ function ChapterRight() {
   )
 }
 
-export default ChapterRight
+export default ChapterColumnRight

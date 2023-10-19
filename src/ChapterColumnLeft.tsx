@@ -10,7 +10,7 @@ interface IProps {
 
 const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa']
 
-const ChapterLeft = ({ handleClickActive, activeItem }: IProps) => {
+const ChapterColumnLeft = ({ handleClickActive, activeItem }: IProps) => {
   return (
     <div className={styles.leftColumn}>
       <div className={styles.subColumnPart}>
@@ -43,4 +43,4 @@ const ChapterLeft = ({ handleClickActive, activeItem }: IProps) => {
   )
 }
 
-export default ChapterLeft
+export default ChapterColumnLeft

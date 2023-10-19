@@ -1,4 +1,4 @@
-._styles-module__container__1Lxpd {
+._1Lxpd {
   display: grid;
   grid-template-columns: 30% auto; /* Divide the container into two columns with a 1:2 ratio */
   gap: 20px; /* Adjust the gap between columns */
@@ -8,7 +8,7 @@
 }
 
 
-._styles-module__leftColumn__2gaAC {
+._2gaAC {
   display: grid;
   grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
   /* gap: 10px;  */
@@ -16,19 +16,19 @@
   height: min-content;
 }
 
-._styles-module__leftColumnGap__ijnjF {
+._ijnjF {
   display: grid;
   grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
   gap: 10px; 
 }
 
-._styles-module__rightColumn__3NenG {
+._3NenG {
   display: grid;
   grid-template-rows: auto auto; /* Divide the right column into two sub-columns */
   gap: 10px; /* Adjust the gap between sub-columns */
 }
 
-._styles-module__subColumn__39ZZ8 {
+._39ZZ8 {
   background-color: #ffffff;
   border-top: 1px solid #efefef;
   box-shadow: 0px 2px 4px 0px #00000014;
@@ -36,28 +36,28 @@
   width: 100%;
 }
 
-._styles-module__subColumnPart__3a68D {
+._3a68D {
   background-color: #ffffff;
   border-top: 1px solid #efefef;
   box-shadow: 0px 2px 4px 0px #00000014;
   padding: 20px;
 }
 
-._styles-module__subColumnActive__2CF2J {
+._2CF2J {
   background-color: #ffffff;
   margin: 15px 0px;
   padding: 30px 20px;
   width: 100%;
 }
 
-._styles-module__titlePart__3BaYH {
+._3BaYH {
   font-weight: 500;
   font-size: 26px;
   line-height: 32px;
   color: #141414;
 }
 
-._styles-module__descriptionPart__3ubcI {
+._3ubcI {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -66,14 +66,14 @@
   margin-bottom: 1.6rem;
 }
 
-._styles-module__timeProgress__2-wbY {
+._2-wbY {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: #141414;
 }
 
-._styles-module__timeRemainning__3Tma6 {
+._3Tma6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -81,14 +81,14 @@
   margin-left: 0.2rem;
 }
 
-._styles-module__percentProgress__25lI6 {
+._25lI6 {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   color: #141414;
 }
 
-._styles-module__titleChapter__zqKUL {
+._zqKUL {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -96,7 +96,7 @@
   margin-bottom: 10px;
 }
 
-._styles-module__titleChapterActive__1RYoN {
+._1RYoN {
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -104,14 +104,14 @@
   margin-bottom: 10px;
 }
 
-._styles-module__timeProgressSecondary__1AjD2 {
+._1AjD2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: #a1a1a1;
 }
 
-._styles-module__timeRemainningSecondary__3LgLF {
+._3LgLF {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -119,34 +119,34 @@
   margin-left: 0.2rem;
 }
 
-._styles-module__percentProgress__25lI6 {
+._25lI6 {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   color: #141414;
 }
 
-._styles-module__percentProgressSecondary__lpLCV {
+._lpLCV {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   color: #a1a1a1;
 }
 
-._styles-module__progressContainer__1vzPx {
+._1vzPx {
   /* border-bottom: 1px solid #efefef; */
   /* padding-bottom: 25px; */
 }
 
-._styles-module__btnPrimary__3LN22{
+._3LN22{
   background-color: #ffd700;
 }
 
-._styles-module__btnSecondary__1aql5 {
+._1aql5 {
   background-color: #D5D5D5;
 }
 
-._styles-module__infoChapterRight__2cr3p {
+._2cr3p {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -155,14 +155,14 @@
   padding-bottom: 0.75rem;
 }
 
-._styles-module__titleChapterRight__102GJ{
+._102GJ{
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   margin: 10px 0px;
 }
 
-._styles-module__infoUnit__34j0Z{
+._34j0Z{
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0px #00000014;
   align-items: center;
@@ -172,7 +172,7 @@
   justify-content: space-between;
 }
 
-._styles-module__titleLearning__kLKwI{
+._kLKwI{
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -180,7 +180,7 @@
   align-self: center;
 }
 
-._styles-module__timeUnit__37abq{
+._37abq{
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
