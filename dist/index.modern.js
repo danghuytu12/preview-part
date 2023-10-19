@@ -1,6 +1,6 @@
 import React__default, { useState, createElement } from 'react';
 
-var styles = {"container":"_styles-module__container__1Lxpd","leftColumn":"_styles-module__leftColumn__2gaAC","leftColumnGap":"_styles-module__leftColumnGap__ijnjF","rightColumn":"_styles-module__rightColumn__3NenG","subColumn":"_styles-module__subColumn__39ZZ8","subColumnActive":"_styles-module__subColumnActive__2CF2J","titlePart":"_styles-module__titlePart__3BaYH","descriptionPart":"_styles-module__descriptionPart__3ubcI","timeProgress":"_styles-module__timeProgress__2-wbY","timeRemainning":"_styles-module__timeRemainning__3Tma6","percentProgress":"_styles-module__percentProgress__25lI6","titleChapter":"_styles-module__titleChapter__zqKUL","titleChapterActive":"_styles-module__titleChapterActive__1RYoN","timeProgressSecondary":"_styles-module__timeProgressSecondary__1AjD2","timeRemainningSecondary":"_styles-module__timeRemainningSecondary__3LgLF","percentProgressSecondary":"_styles-module__percentProgressSecondary__lpLCV","progressContainer":"_styles-module__progressContainer__1vzPx","btnPrimary":"_styles-module__btnPrimary__3LN22","btnSecondary":"_styles-module__btnSecondary__1aql5","infoChapterRight":"_styles-module__infoChapterRight__2cr3p","titleChapterRight":"_styles-module__titleChapterRight__102GJ","infoUnit":"_styles-module__infoUnit__34j0Z","titleLearning":"_styles-module__titleLearning__kLKwI","timeUnit":"_styles-module__timeUnit__37abq"};
+var styles = {"container":"_styles-module__container__1Lxpd","leftColumn":"_styles-module__leftColumn__2gaAC","leftColumnGap":"_styles-module__leftColumnGap__ijnjF","rightColumn":"_styles-module__rightColumn__3NenG","subColumn":"_styles-module__subColumn__39ZZ8","subColumnPart":"_styles-module__subColumnPart__3a68D","subColumnActive":"_styles-module__subColumnActive__2CF2J","titlePart":"_styles-module__titlePart__3BaYH","descriptionPart":"_styles-module__descriptionPart__3ubcI","timeProgress":"_styles-module__timeProgress__2-wbY","timeRemainning":"_styles-module__timeRemainning__3Tma6","percentProgress":"_styles-module__percentProgress__25lI6","titleChapter":"_styles-module__titleChapter__zqKUL","titleChapterActive":"_styles-module__titleChapterActive__1RYoN","timeProgressSecondary":"_styles-module__timeProgressSecondary__1AjD2","timeRemainningSecondary":"_styles-module__timeRemainningSecondary__3LgLF","percentProgressSecondary":"_styles-module__percentProgressSecondary__lpLCV","progressContainer":"_styles-module__progressContainer__1vzPx","btnPrimary":"_styles-module__btnPrimary__3LN22","btnSecondary":"_styles-module__btnSecondary__1aql5","infoChapterRight":"_styles-module__infoChapterRight__2cr3p","titleChapterRight":"_styles-module__titleChapterRight__102GJ","infoUnit":"_styles-module__infoUnit__34j0Z","titleLearning":"_styles-module__titleLearning__kLKwI","timeUnit":"_styles-module__timeUnit__37abq"};
 
 const Progress = ({
   classNameBtn,
@@ -47,6 +47,16 @@ const Chapter = ({
   activeItem
 }) => {
   return React__default.createElement("div", {
+    style: {
+      display: 'flex'
+    }
+  }, item === activeItem ? React__default.createElement("div", {
+    style: {
+      background: '#ffd700',
+      width: 6,
+      margin: '15px 0px'
+    }
+  }) : null, React__default.createElement("div", {
     className: item === activeItem ? styles.subColumnActive : styles.subColumn
   }, React__default.createElement("div", {
     style: {
@@ -60,7 +70,7 @@ const Chapter = ({
     classNameTitle: activeItem === item ? styles.timeProgress : styles.timeProgressSecondary,
     classNameRemainning: styles.timeRemainningSecondary,
     classPercent: activeItem === item ? styles.percentProgress : styles.percentProgressSecondary
-  })));
+  }))));
 };
 
 const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa'];
@@ -71,7 +81,7 @@ const ChapterLeft = ({
   return React__default.createElement("div", {
     className: styles.leftColumn
   }, React__default.createElement("div", {
-    className: styles.subColumn
+    className: styles.subColumnPart
   }, React__default.createElement("div", null, React__default.createElement("div", {
     className: styles.titlePart
   }, "Part A: Audit framework and regulation"), React__default.createElement("div", {
@@ -243,7 +253,6 @@ function ChapterRight() {
 
 const ExampleComponent = () => {
   const [activeItem, setActiveItem] = useState(null);
-  console.log(activeItem);
   const handleClickActive = item => {
     setActiveItem(item);
   };

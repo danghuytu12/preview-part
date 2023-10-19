@@ -4,10 +4,9 @@ import ChapterRight from './ChapterRight'
 import styles from './styles.module.css'
 
 const ExampleComponent = () => {
-  const [activeItem, setActiveItem] = React.useState(null)
-  console.log(activeItem)
+  const [activeItem, setActiveItem] = React.useState<any>(null)
 
-  const handleClickActive = (item: any) => {
+  const handleClickActive = (item: string) => {
     setActiveItem(item)
   }
 

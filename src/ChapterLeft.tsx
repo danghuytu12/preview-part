@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 interface IProps {
   activeItem: string | null
-  handleClickActive: any
+  handleClickActive: (item: string | null) => void
 }
 
 const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa']
@@ -13,7 +13,7 @@ const items = ['Items1', 'Item 2', 'Items3', 'item4', 'aa']
 const ChapterLeft = ({ handleClickActive, activeItem }: IProps) => {
   return (
     <div className={styles.leftColumn}>
-      <div className={styles.subColumn}>
+      <div className={styles.subColumnPart}>
         <div>
           <div className={styles.titlePart}>
             Part A: Audit framework and regulation

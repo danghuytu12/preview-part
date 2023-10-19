@@ -30,7 +30,14 @@
 
 ._styles-module__subColumn__39ZZ8 {
   background-color: #ffffff;
-  /* padding: 10px; */
+  border-top: 1px solid #efefef;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+._styles-module__subColumnPart__3a68D {
+  background-color: #ffffff;
   border-top: 1px solid #efefef;
   box-shadow: 0px 2px 4px 0px #00000014;
   padding: 20px;
@@ -38,12 +45,9 @@
 
 ._styles-module__subColumnActive__2CF2J {
   background-color: #ffffff;
-  /* padding: 10px; */
   margin: 15px 0px;
-  padding: 20px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  padding: 30px 20px;
+  width: 100%;
 }
 
 ._styles-module__titlePart__3BaYH {
