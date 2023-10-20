@@ -32,7 +32,7 @@
   background-color: #ffffff;
   border-top: 1px solid #efefef;
   box-shadow: 0px 2px 4px 0px #00000014;
-  padding: 30px 20px;
+  padding: 30px;
   width: 100%;
 }
 
@@ -40,7 +40,7 @@
   background-color: #ffffff;
   border-top: 1px solid #efefef;
   box-shadow: 0px 2px 4px 0px #00000014;
-  padding: 20px;
+  padding: 30px;
 }
 
 ._styles-module__subColumnActive__2CF2J {
@@ -62,7 +62,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #141414;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   margin-bottom: 1.6rem;
 }
 
@@ -93,7 +93,7 @@
   font-weight: 400;
   line-height: 19px;
   color: #a1a1a1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 ._styles-module__titleChapterActive__1RYoN {
@@ -101,7 +101,7 @@
   font-weight: 700;
   line-height: 19px;
   color: #141414;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 ._styles-module__timeProgressSecondary__1AjD2 {
@@ -159,7 +159,14 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  margin: 10px 0px;
+  margin: 20px 0px;
+}
+
+._styles-module__titleChapterLearning__GQFto{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 30px 0px 15px 0px;
 }
 
 ._styles-module__infoUnit__34j0Z{

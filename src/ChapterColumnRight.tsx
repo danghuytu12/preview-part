@@ -7,7 +7,7 @@ function ChapterColumnRight() {
   return (
     <div className={styles.columnRight}>
       <div className={styles.infoChapterRight}>editor</div>
-      <div className={styles.titleChapterRight}>Learning Outcome</div>
+      <div className={styles.titleChapterLearning}>Learning Outcome</div>
       <div className={styles.infoUnit}>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div>
